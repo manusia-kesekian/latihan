@@ -53,11 +53,10 @@ body {
 .content{
     position: fixed;
     border-radius: 10px;
-    height: 300px;
+    height: auto;
     background: white;
     padding: 30px;
-    position: absolute;
-    top: 50%;
+    top: 40%;
     left: 50%;
     transform: translate(-50%,-50%) scale(0);
     transition: 200ms ease-in-out;
@@ -68,9 +67,6 @@ body {
     transform: translate(-50%,-50%) scale(1);
 }
 
-.content.active{
-    opacity: 1;
-}
 
 .close{
     padding-bottom: 20px;
@@ -85,7 +81,3 @@ body {
     font-weight: 600;
     font-size: 20px;
 }
-
-
-
-
