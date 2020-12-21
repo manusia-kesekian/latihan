@@ -15,8 +15,12 @@ body {
 }
 
 .container {
-    margin: 250px auto;
-    width: 350px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%) scale(1);
+    width: 30%;
+    height: 20%;
     text-align: center;
     text-transform: uppercase;
     border-radius: 10px;
@@ -26,14 +30,12 @@ body {
 }
 
 .button {
-    display: inline-block;
     color: #c0392b;
     background-color: #ecf0f1;
     padding: 12px 50px;
     border-width: 2px;
     border-style: solid;
     border-color: #c0392b;
-    border-image: initial;
     border-radius: 6px;
 }
 
@@ -56,11 +58,12 @@ body {
     height: auto;
     background: white;
     padding: 30px;
-    top: 40%;
+    top: 50%;
     left: 50%;
     transform: translate(-50%,-50%) scale(0);
     transition: 200ms ease-in-out;
     text-align: justify;
+    z-index: 1;
 }
 
 .content.active{
@@ -80,4 +83,13 @@ body {
     background: none;
     font-weight: 600;
     font-size: 20px;
+}
+
+.overlay.active{
+    background-color: rgba(0, 0, 0, .5);
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    position: fixed;
 }
